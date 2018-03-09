@@ -36,7 +36,7 @@
   </nav>
   <!-- <section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/images/section-5.jpg"> -->
   <section class="home-section home-full-height bg-dark-30" id="home">
-    <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=8YiQSvQzwgU', containment:'.home-section', startAt:1, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:1}"></div>
+    <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=FL8jse1It5s', containment:'.home-section', startAt:1, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:1}"></div>
     <div class="video-controls-box">
       <div class="container">
         <!-- <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div> -->
@@ -121,7 +121,7 @@
       </div>
     </section>
     <!-- <section class="module bg-dark-60" data-background="assets/images/section-6.jpg"> -->
-      <section class="module bg-dark-60">
+    <section class="module bg-dark-60">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -486,7 +486,8 @@
               <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
                   <blockquote class="testimonial-text font-alt">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like
-                    mine.</blockquote>
+                    mine.
+                  </blockquote>
                 </div>
               </div>
               <div class="row">
@@ -677,9 +678,17 @@
             <div class="module-subtitle font-serif"></div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <form id="contactForm" role="form" method="post" action="php/contact.php">
+        <div>
+
+        </div>
+        <!-- <div class="row">
+          <div class="col-sm-12 col-md-7 col-lg-7">
+            <iframe width="auto" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAA5bxNddfC3oLZILVFdH0GEDh1ZltRQNU
+    &q=ละมุนภัณฑ์+Coffice+Idea+Space" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="col-sm-12 col-md-5 col-lg-5">
+            <form id="contactForm" role="form">
               <div class="form-group">
                 <label class="sr-only" for="name">Name</label>
                 <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."
@@ -700,7 +709,117 @@
                 <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
               </div>
             </form>
-            <div class="ajax-response font-alt" id="contactFormResponse"></div>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-sm-7">
+            <form id="ajax-contact" role="form">
+              <div class="messages" id="form-messages"></div>
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_name">Firstname *</label>
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required"
+                        data-error="Firstname is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname">Lastname *</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required"
+                        data-error="Lastname is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_email">Email *</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required"
+                        data-error="Valid email is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_phone">Phone*</label>
+                      <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone*" required>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"
+                        data-error="Please,leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" class="btn btn-black contact-sub" value="Send message">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <br>
+                    <small class="text-muted" style="color:red;">
+                      <strong>*</strong> These fields are required.</small>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+          <div class="col-sm-5">
+            <div class="row col1 text-left">
+              <div class="col-xs-3">
+                <i class="fa fa-map-marker" style="font-size:16px;"></i>   Address
+              </div>
+              <div class="col-xs-9">
+                55/7 ม.11 ถ.วงแหวน-ลำลูกกา ต.บึงคำพร้อย อ.ลำลูกกา จ.ปทุมธานี 12150
+              </div>
+            </div>
+
+            <div class="row col1 text-left">
+              <div class="col-xs-3">
+                <i class="fa fa-phone"></i>   Phone
+              </div>
+              <div class="col-xs-9">
+                (+66)89-4447208
+              </div>
+            </div>
+
+            <div class="row col1 text-left">
+              <div class="col-xs-3">
+                <i class="fa fa-envelope"></i>   Email
+              </div>
+              <div class="col-xs-9">
+                <a href="mailto:Jigkoh3@gmail.com">jigkoh3@gmail.com</a>
+              </div>
+
+            </div>
+            <div class="row col1 text-left">
+              <div class="col-xs-3">
+                <i class="fa fa-facebook"></i>   facebook
+              </div>
+              <div class="col-xs-9">
+                <a href="https://www.facebook.com/Cyber-Advance-System-and-Network-CoLtd-833573076688104/?fref=ts">
+                  Cyber Advance System and Network Co.,Ltd
+                </a>
+              </div>
+            </div>
+            <br>
+
+            <iframe width="100%" height="230" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border-radius:0px"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAA5bxNddfC3oLZILVFdH0GEDh1ZltRQNU
+    &q=ละมุนภัณฑ์+Coffice+Idea+Space" allowfullscreen>
+            </iframe>
           </div>
         </div>
       </div>
